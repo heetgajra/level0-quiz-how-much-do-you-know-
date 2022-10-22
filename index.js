@@ -38,31 +38,48 @@
 
 // // output
 
-function multiple(numberOne , numberTwo) {
-  console.log("numberOne : ", numberOne , "numberTwo :", numberTwo)
-  var multiplication = numberOne * numberTwo;
-  return multiplication
-  // console.log(sum)
+// function multiple(numberOne , numberTwo) {
+//   console.log("numberOne : ", numberOne , "numberTwo :", numberTwo)
+//   var multiplication = numberOne * numberTwo;
+//   return multiplication
+//   // console.log(sum)
+// }
+// var answer = multiple(7 , 10);
+// console.log("the answer of the multiplication of 7 & 10 is : " + answer) 
+
+// function add (numberOne , numberTwo) {
+//   console.log("numberOne : ", numberOne, "numberTwo : ", numberTwo)
+//   var addition = numberOne + numberTwo;
+//   return addition
+// }
+// var result = add (7, 10);
+// console.log("the additiom is : " + result ) 
+
+// console.log(add(5,10));
+// console.log(multiple(1,4));
+
+
+var readlineSync = require("readline-sync");
+
+var score = 0;
+
+function game(question , answer){
+  var userAnswer = readlineSync.question(question);
+  
+  if (userAnswer === answer) {
+    console.log("you are right ")
+    score = score + 1
+    console.log(score)
+  } else {
+    console.log("you are wrong ")
+    score = score - 1;
+    console.log(score)
+  
+  }
 }
-var answer = multiple(7 , 10);
-console.log("the answer of the multiplication of 7 & 10 is : " + answer) 
-
-function add (numberOne , numberTwo) {
-  console.log("numberOne : ", numberOne, "numberTwo : ", numberTwo)
-  var addition = numberOne + numberTwo;
-  return addition
-}
-var result = add (7, 10);
-console.log("the additiom is : " + result ) 
-
-
-
-
-
-
-
-
-
+game("where is my home " , "dombivali");
+game("whats my fav food " , "vadapav");
+console.log("your score is " , score)
 
 
 
