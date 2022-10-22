@@ -53,8 +53,7 @@ function add (numberOne , numberTwo) {
   return addition
 }
 var result = add (7, 10);
-console.log("the additiom is : " + result )
-
+console.log("the additiom is : " + result ) 
 
 
 
