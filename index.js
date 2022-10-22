@@ -59,30 +59,31 @@
 // console.log(multiple(1,4));
 
 
-var readlineSync = require("readline-sync");
+// var readlineSync = require("readline-sync");
 
-var score = 0;
+// var score = 0;
 
-function game(question , answer){
-  var userAnswer = readlineSync.question(question);
+// function game(question , answer){
+//   var userAnswer = readlineSync.question(question);
   
-  if (userAnswer === answer) {
-    console.log("you are right ")
-    score = score + 1
-    console.log(score)
-  } else {
-    console.log("you are wrong ")
-    score = score - 1;
-    console.log(score)
+//   if (userAnswer === answer) {
+//     console.log("you are right ")
+//     score = score + 1
+//     console.log(score)
+//   } else {
+//     console.log("you are wrong ")
+//     score = score - 1;
+//     console.log(score)
   
-  }
-}
-game("where is my home " , "dombivali");
-game("whats my fav food " , "vadapav");
-console.log("your score is " , score)
+//   }
+// }
+// game("where is my home " , "dombivali");
+// game("whats my fav food " , "vadapav");
+// console.log("your score is " , score)
 
 
-
+for (var i=22; i<32; i = i + 1)
+  console.log(i)
 
 
 
